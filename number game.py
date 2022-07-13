@@ -2,6 +2,7 @@
 
 from random import randint as rint
 from random import uniform
+import time
 
 dm = ["easy", "normal", "hard", "impossible"]
 numbs = [10, 100, 1000, 1000]
@@ -52,6 +53,7 @@ while check == True:
         else:
             count += 1
             print("Congratulations you guessed the number", gamenumb, "in", count, "Guesses")
+            time.sleep(5)
             break
 
     except:
